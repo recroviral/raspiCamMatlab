@@ -8,8 +8,8 @@
 clear classes;
 
 %% Instantiate video device, face detector, and KLT object tracker
-rpi = raspi('192.168.2.75','pi','Viral1043');
-cam = cameraboard(rpi, 'Resolution', '640x480')
+rpi = raspi('<IP address>','<Username>','<Password>');
+cam = cameraboard(rpi, 'Resolution', '640x480');
 vidObj = cam;
 
 faceDetector = vision.CascadeObjectDetector(); % Finds faces by default
