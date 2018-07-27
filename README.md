@@ -7,9 +7,11 @@ Download: matlab support packages for Raspberry pi hardware
 
 step 2: Now connect raspberry pi with host computer and check the connection into command window using following command
 
-  rpi = raspi('192.168.2.75','pi','Viral1043'); #To connect raspberry pi to matlab through Enthernate cable
+You can check your raspberry pi IP using Advance IP scanner or by typing "$ifconfig" in raspberri pi terminal.
+
+  rpi = raspi('<IP address>','<Username>','<Password>'); #To connect raspberry pi to matlab through Enthernate cable
 
   cam = cameraboard(rpi, 'Resolution', '640x480'); #To open camera connected with raspberry pi
   
-step 3: Clone or Download repositories and run the 
+step 3: Clone or Download repositories and Edit Ip address, Username and Password in RaspidetectFace.m 
 
